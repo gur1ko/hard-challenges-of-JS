@@ -93,3 +93,69 @@ console.log(sortHighToLow([
 ])); */
 
 
+
+
+
+
+
+
+
+
+
+// sort by price : h to L
+
+/* function sortHighToLow(arr) {
+    return arr.sort((a, b) => b.price - a.price)
+}
+console.log(sortHighToLow([
+    { id: 1, price: 50},
+    { id: 2, price: 0},
+    { id: 3, price: 400},
+    { id: 4, price: 100},
+])); 
+
+ */
+
+
+
+
+
+/////////PROMISES///////
+
+
+
+///////API//////
+// find all the posts by a single user
+// "https://jsonplaceholder.typeicode.com/posts"
+// async goes Before the function, await goes NEXT to the promise
+/* async function postsByUser(userId) {
+
+    const promise = await fetch("https://jsonplaceholder.typicode.com/posts");
+
+    const result = await promise.json()
+    
+
+    const posts = result.filter(element => element.userId === userId)
+    console.log(posts)
+
+}
+
+postsByUser(6); */
+
+
+/* async function firstSixIncomplete(userId) {
+    const promise = await fetch("https://jsonplaceholder.typicode.com/todos");
+
+    const result = await promise.json();
+
+    const incompleteTasks = result.filter(element => !element.completed).slice(0, 6);
+
+    console.log(incompleteTasks);
+
+
+}
+
+firstSixIncomplete(6); */
+
+
+///////////DONE//////////////
